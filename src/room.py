@@ -4,6 +4,12 @@ class Room:
         self.guests = []
         self.song = []
 
-    # def add_guest_to_room(self, guest):
     def guest_count(self):
         return len(self.guests)
+
+    def add_guest_to_room(self, guest):
+        self.guests.append(guest)
+
+    def remove_guest_from_room(self, guest):
+        for guest in self.guests:
+            self.guests.remove(guest)

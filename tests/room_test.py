@@ -17,3 +17,11 @@ class TestRoom(unittest.TestCase):
 
     def test_check_if_room_is_free(self):        
         self.assertEqual(0, self.room1.guest_count())
+
+    def test_check_in_guest_to_room(self):
+        self.room1.add_guest_to_room(self.room1)
+        self.assertEqual(1, self.room1.guest_count())
+
+    def test_check_out_guest_from_room(self):
+        self.room1.remove_guest_from_room(self.room1)
+        self.assertEqual(0, self.room1.guest_count())
