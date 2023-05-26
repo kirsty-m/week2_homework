@@ -12,16 +12,3 @@ class TestSong(unittest.TestCase):
     
     def test_song_has_title(self):
         self.assertEqual("Young Hearts Run Free", self.song3.title)
-    
-    
-    
-    # def setUp(self):
-    #     # songs = [self.song1, self.song2, self.song3]
-    #     # self.song1 = "I Feel Love"
-    #     # self.song2 = "I Will Survive"
-    #     # self.song3 = "Young Hearts Run Free"
-    #     pass
-        
-
-    # def test_song_has_room(self):
-    #     pass
