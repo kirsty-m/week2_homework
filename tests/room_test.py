@@ -5,8 +5,4 @@ from src.song import Song
 from src.guest import Guest
 
 class TestRoom(unittest.TestCase):
-    def setUp(self):
-        pass
-
-    def test_room_has_guest(self):
-        pass
+   pass
