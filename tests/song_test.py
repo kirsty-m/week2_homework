@@ -1,5 +1,5 @@
 import unittest
-from src.karaoke_bar import KaraokeBar
+from src.karaokebar import KaraokeBar
 from src.room import Room 
 from src.song import Song
 from src.guest import Guest
