@@ -25,3 +25,7 @@ class TestRoom(unittest.TestCase):
     def test_check_out_guest_from_room(self):
         self.room1.remove_guest_from_room(self.room1)
         self.assertEqual(0, self.room1.guest_count())
+
+    def test_add_song_to_room(self): 
+        self.room3.add_song_to_room(self.room3)
+        self.assertEqual(1, self.room3.song_count())

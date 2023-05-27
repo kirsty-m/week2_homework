@@ -13,3 +13,9 @@ class Room:
     def remove_guest_from_room(self, guest):
         for guest in self.guests:
             self.guests.remove(guest)
+
+    def add_song_to_room(self, song):
+       self.song.append(song)
+
+    def song_count(self):
+        return len(self.song)
