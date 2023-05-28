@@ -1,8 +1,11 @@
 class Room:
     def __init__(self, name, cost):
         self.name = name
+        self.cost = cost
         self.guests = []
         self.song = []
+
+
 
     def guest_count(self):
         return len(self.guests)
@@ -23,3 +26,7 @@ class Room:
     def room_availability(self):
         if len(self.guests) == 0:
             return True
+
+    
+        
+        

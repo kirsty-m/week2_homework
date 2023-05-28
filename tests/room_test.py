@@ -3,7 +3,7 @@ import unittest
 from src.karaokebar import KaraokeBar
 from src.room import Room 
 from src.song import Song
-from src.guest import Guest
+from src.karaoke_guest import Guest
 
 class TestRoom(unittest.TestCase):
     def setUp(self):
@@ -14,9 +14,15 @@ class TestRoom(unittest.TestCase):
         self.song_count = [0]
         
     
-        self.song1 = "I Feel Love"
+        self.song1 = "Hot Stuff"
         self.song2 = "I Will Survive"
         self.song3 = "Young Hearts Run Free"
+
+        self.guest1 = ("Donna", 200)
+        self.guest2 = ("Gloria", 300)
+        self.guest3 = ("Candi", 400)
+
+
     
     def test_room_has_name(self):
         self.assertEqual("Premium", self.room2.name)
@@ -42,6 +48,7 @@ class TestRoom(unittest.TestCase):
         self.assertEqual(1, self.room3.guest_count())
         self.assertEqual(1, self.room3.song_count())
 
-    
-        
-        
+    def test_room_has_cost(self):
+        self.assertEqual(30, self.room1.cost)
+
+
